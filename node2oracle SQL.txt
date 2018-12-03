@@ -1,0 +1,13 @@
+-- 테이블 생성 
+Create Table NOTICE(
+    NOTICE_ID Number, 
+    WRITER varchar2(100) NOT NULL, 
+    TITLE varchar2(100) NOT NULL, 
+    CONTENT varchar2(100) NOT NULL
+    );
+
+-- 시퀀스 생성 
+CREATE SEQUENCE seq_notice MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+
+-- insert 결과 확인 
+select * from NOTICE;
